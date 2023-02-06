@@ -1,5 +1,6 @@
 import os
 
+#start programma, stel zo nodige variabele in
 print ("========== PyReg ===========")
 print ("Welkom bij PyReg, het Python KassaSysteem voor en door DeveloperLand!")
 print ("Tel de kassa, en geef op hoeveel er nu in zit.")
@@ -11,6 +12,7 @@ dagTotaalTerug = 0
 
 while(not keuze == "9" ):
     os.system('cls')
+    #toon hoofdmenu
     print ("======== HOOFDMENU =========")
     print ("1. Nieuwe bon")
     print ("2. Retour")
@@ -70,6 +72,7 @@ while(not keuze == "9" ):
                 bestelKeuze = 9
                 bonTotaal = 0
                 bonString = ""
+    #toon retourbedrag
     elif(keuze == "2"):
         print ("Uitvoeren terugbetaling")
         terugTeGeven = float(input( "Bedrag originele bon: "))
